@@ -20,4 +20,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home_page, name = 'home_page'),
+    path('house/', views.map_render, name='map_render' ),
 ]

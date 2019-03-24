@@ -19,3 +19,8 @@ def home_page(request):
     # ipdb.set_trace()
     response = render(request, 'index.html', context)
     return HttpResponse(response)
+
+
+def map_render(request):
+    response = render(request, 'map.html')
+    return HttpResponse(response)

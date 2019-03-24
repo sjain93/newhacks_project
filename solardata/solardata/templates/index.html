@@ -8,7 +8,7 @@
     <h2>Solar Water Heaters: TO</h2>
     <p>Here is a list of addresses where the building has a permit for solar water heater:</p>
     {% for item in data %}
-        <p> {{ item }} </p>
+        <p> <a href="{% url 'map_render' %}"> {{ item }} </a> </p>
     {% endfor %}
   </body>
 </html>
